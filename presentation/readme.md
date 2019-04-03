@@ -7,7 +7,6 @@ Due date: February 18 2019
 
 ## Point of Sales System
 
-[comment]: <> (describe your groups 'mini world' opportunity for setting a scene/story)
 
 1. Sales
 	* Track sales
