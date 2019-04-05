@@ -11,3 +11,4 @@ To sell, and receive products as well as perform inventory transactions such as 
 **FIRST PRESENTATION**
  
  - February 19th -
+ First presentation of the project went well we were given some feedback on our table structures and were able to make some final corrections before starting on the restrictions.
