@@ -1,0 +1,81 @@
+﻿@model IEnumerable<point_of_sales.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Access_level.access_value)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee1.employee_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employee_email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employee_first_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employee_last_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.employee_data_of_birth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_hired)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hours_per_week)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sex)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Access_level.access_value)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee1.employee_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employee_email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employee_first_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employee_last_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.employee_data_of_birth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.date_hired)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hours_per_week)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sex)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.employee_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.employee_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.employee_id })
+        </td>
+    </tr>
+}
+
+</table>
